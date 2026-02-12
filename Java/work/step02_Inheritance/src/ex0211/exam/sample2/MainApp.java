@@ -1,4 +1,4 @@
-package ex2011.exam.sample2;
+package ex0211.exam.sample2;
 
 public class MainApp {
 

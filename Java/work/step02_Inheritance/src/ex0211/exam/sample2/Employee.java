@@ -1,47 +1,37 @@
-package ex2011.exam.sample1;
+package ex0211.exam.sample2;
 
-public class FullTime {
-
+public class Employee {
+	
 	private int empNo;
 	private String eName;
 	private String job;
 	private int mgr;
 	private String hiredate;
 	private String deptName;
-	private int salary;
-	private int bonus;
-
-	public void message() {
-		String str = 
-				this.eName + "사원은 정규직입니다.";
-		
-		System.out.println(str);
-	}
-
+	
 	@Override
 	public String toString() {
 		String str = 
 				this.empNo + " | " + this.eName + " | " + this.job + " | " + 
-				this.mgr + " | " + this.hiredate + " | " + this.deptName + " | " + 
-				this.salary + " | " + this.bonus;
+				this.mgr + " | " + this.hiredate + " | " + this.deptName; 
 		
 		return str;
 	}
-
-	public FullTime(int empNo, String eName, String job, int mgr, String hiredate, String deptName, int salary,
-			int bonus) {
+	
+	public void message() {
+	}
+	
+	public Employee(int empNo, String eName, String job, int mgr, String hiredate, String deptName) {
 		this.empNo = empNo;
 		this.eName = eName;
 		this.job = job;
 		this.mgr = mgr;
 		this.hiredate = hiredate;
 		this.deptName = deptName;
-		this.salary = salary;
-		this.bonus = bonus;
 	}
-
-	public FullTime() {
-
+	
+	public Employee() {
+		
 	}
 
 	public int getEmpNo() {
@@ -91,21 +81,5 @@ public class FullTime {
 	public void setDeptName(String deptName) {
 		this.deptName = deptName;
 	}
-
-	public int getSalary() {
-		return salary;
-	}
-
-	public void setSalary(int salary) {
-		this.salary = salary;
-	}
-
-	public int getBonus() {
-		return bonus;
-	}
-
-	public void setBonus(int bonus) {
-		this.bonus = bonus;
-	}
-
+	
 }

@@ -1,4 +1,4 @@
-package ex2011.exam.sample1;
+package ex0211.exam.sample1;
 
 public class PartTime {
 
